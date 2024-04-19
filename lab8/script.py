@@ -9,5 +9,7 @@ lines = [[field['name'], field['html_url'],field['updated_at'],field['visibility
 
 with open('chacon.csv', 'w') as file2: 
     writer = csv.writer(file2) 
-
+    field = ['name','html_url', 'updated_art', 'visibility']
+ 
+    writer.writerow(field)
     writer.writerows(lines) 
